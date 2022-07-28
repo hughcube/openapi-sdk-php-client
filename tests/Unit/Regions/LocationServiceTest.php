@@ -196,12 +196,12 @@ class LocationServiceTest extends TestCase
     /**
      * @throws ClientException
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::accessKeyClient('foo', 'bar')->asDefaultClient();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         AlibabaCloud::cancelMock();
     }

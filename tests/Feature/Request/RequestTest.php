@@ -131,7 +131,7 @@ class RequestTest extends TestCase
     /**
      * @throws ClientException
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::accessKeyClient(
             \getenv('ACCESS_KEY_ID'),

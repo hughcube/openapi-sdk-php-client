@@ -66,7 +66,7 @@ class ClientTraitTest extends TestCase
         AlibabaCloud::getDefaultClient();
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         self::$regionId        = 'cn-hangzhou';
         self::$accessKeyId     = \getenv('ACCESS_KEY_ID');

@@ -27,7 +27,7 @@ class AccessKeyCredentialTest extends TestCase
     /**
      * @throws ClientException
      */
-    public function setUp()
+    public function setUp(): void
     {
         $regionId        = 'cn-hangzhou';
         $accessKeyId     = \getenv('ACCESS_KEY_ID');
@@ -40,7 +40,7 @@ class AccessKeyCredentialTest extends TestCase
     /**
      * @throws ClientException
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         AlibabaCloud::del($this->clientName);
     }

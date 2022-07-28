@@ -588,7 +588,7 @@ class AcsTraitTest extends TestCase
         self::assertEquals('ecs-cn-hangzhou.aliyuncs.com', $request->uri->getHost());
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         AlibabaCloud::cancelMock();
     }

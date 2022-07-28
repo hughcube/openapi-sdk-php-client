@@ -210,7 +210,7 @@ class CredentialsProviderTest extends TestCase
         putenv('ALIBABA_CLOUD_PROFILE=default');
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::flush();
     }

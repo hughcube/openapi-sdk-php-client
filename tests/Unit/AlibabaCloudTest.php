@@ -23,7 +23,7 @@ class AlibabaCloudTest extends TestCase
         AlibabaCloud::Ecs();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         AlibabaCloud::flush();
     }

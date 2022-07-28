@@ -37,7 +37,7 @@
     "guzzlehttp/guzzle": "^6.3|^7.0",
     "danielstjules/stringy": "^3.1",
     "mtdowling/jmespath.php": "^2.5",
-    "adbario/php-dot-notation": "^2.2",
+    "adbario/php-dot-notation": "^2.3",
     "clagiordano/weblibs-configmanager": "^1.0"
   },
   "require-dev": {
@@ -49,7 +49,7 @@
     "drupal/coder": "^8.3",
     "symfony/dotenv": "^3.4",
     "league/climate": "^3.2.4",
-    "phpunit/phpunit": "^5.7.27|^6.1",
+    "phpunit/phpunit": "^5.7|^6.6|^7.5|^8.5|^9.5",
     "monolog/monolog": "^1.24",
     "composer/composer": "^1.8",
     "mikey179/vfsstream": "^1.6",
@@ -73,7 +73,9 @@
   },
   "config": {
     "preferred-install": "dist",
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "allow-plugins": {
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

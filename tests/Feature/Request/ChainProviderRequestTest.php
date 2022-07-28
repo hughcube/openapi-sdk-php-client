@@ -127,7 +127,7 @@ EOT;
         self::assertNotEmpty('PayByTraffic', $result['ChangingChargeType']);
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::flush();
         CredentialsProvider::flush();

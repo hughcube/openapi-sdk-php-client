@@ -11,7 +11,7 @@ class RamTest extends TestCase
     /**
      * @throws ClientException
      */
-    public function setUp()
+    public function setUp(): void
     {
         AlibabaCloud::accessKeyClient(\getenv('ACCESS_KEY_ID'), \getenv('ACCESS_KEY_SECRET'))
                     ->asDefaultClient();

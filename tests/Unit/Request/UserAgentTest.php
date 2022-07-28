@@ -242,7 +242,7 @@ class UserAgentTest extends TestCase
         self::assertStringEndsWith('Append', UserAgent::toString());
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         UserAgent::clear();
     }

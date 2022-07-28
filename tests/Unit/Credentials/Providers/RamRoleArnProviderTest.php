@@ -129,7 +129,7 @@ class RamRoleArnProviderTest extends TestCase
         self::assertInstanceOf(StsCredential::class, $credential);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         AlibabaCloud::cancelMock();
     }

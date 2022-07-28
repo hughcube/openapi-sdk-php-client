@@ -127,12 +127,12 @@ class RsaKeyPairProviderTest extends TestCase
         self::assertInstanceOf(StsCredential::class, $credential);
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::cancelMock();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         AlibabaCloud::cancelMock();
     }

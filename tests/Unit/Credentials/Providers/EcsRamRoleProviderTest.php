@@ -193,7 +193,7 @@ class EcsRamRoleProviderTest extends TestCase
         $provider->get();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         AlibabaCloud::cancelMock();
     }

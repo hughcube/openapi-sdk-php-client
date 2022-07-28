@@ -28,7 +28,7 @@ class ConfigTest extends TestCase
      *
      * @throws ReflectionException
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         self::setStaticProperty(null);
     }

@@ -16,7 +16,7 @@ use AlibabaCloud\Client\Exception\ClientException;
  */
 class RetryByServerTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         AlibabaCloud::forgetHistory();
         AlibabaCloud::rememberHistory();
